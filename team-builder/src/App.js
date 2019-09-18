@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
-import ReactDOM from "react-dom";
 import './App.css';
 import Form from './components/Form';
 import Forms from './components/FormStructure';
+import "./App.css";
+// import styled from "styled-components";
+
+// const H1 = styled.h1 `
+// margin:3%;
+// `
 
 function App() {
-  const [forms, setForms] = useState([{
-    id: 1,
-    name: "Name will display here",
-    email: "Email will display here",
-    role: "Role will display here"
-  }]);
+  const [forms, setForms] = useState([]);
 
   const addNewForm = form => {
     const newForm = {

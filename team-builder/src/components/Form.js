@@ -26,8 +26,8 @@ const Form = props => {
     };
 
     return (
-        <form onSubmit={submitForm}>
-            <label htmlFor="name">Name</label>
+        <form className="submission" onSubmit={submitForm}>
+            <label className="inputs" htmlFor="name">Name</label>
             <input
                 id="name"
                 type="text"
@@ -35,7 +35,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={form.name}
             />
-            <label htmlFor="email">email</label>
+            <label className="inputs" htmlFor="email">Email</label>
             <input
                 id="email"
                 type="text"
@@ -43,7 +43,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={form.email}
             />
-             <label htmlFor="role">Role</label>
+             <label className="inputs" htmlFor="role">Role</label>
             <input
                 id="role"
                 type="text"
@@ -51,7 +51,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={form.role}
             />
-            <button type="submit">Submit Form</button>
+            <button type="submit">Add New Contact</button>
         </form>
     );
 };
